@@ -16,6 +16,8 @@ import {firebaseConfig} from '../environments/firebase-config';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { Authentication } from '../servicios/authentication';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -40,6 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Authentication,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
